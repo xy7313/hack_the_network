@@ -106,7 +106,7 @@
 											</h4>
 										</a>
 									</div>
-									<div class="col-md-5ths col-xs-2">
+									<div class="col-md-5ths col-xs-2" id="div2" ondrop="drop(event)" ondragover="allowDrop(event)">
 										<a class="bootcards-summary-item" href="#"
 											data-pjax="#main" data-title="Code"
 											style="padding-top: 35px;"> <i class="fa fa-3x fa-code"></i>
@@ -376,8 +376,8 @@
 										</div>
 
 										<div class="panel-body">
-											<div class="col-md-4 panel-control">
-												<button class="btn btn-default btn-block" onclick="">
+											<div class="col-md-4 panel-control" id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+												<button class="btn btn-default btn-block" draggable="true" ondragstart="drag(event)" id="drag1" type="button"   data-container="body" data-toggle="popover" data-placement="top" data-content="two cards left" >
 													<i class="fa fa-bug"></i>
 												</button>
 											</div>
@@ -507,5 +507,10 @@
 	<script src="js/fastclick.min.js"></script>
 	<script src="js/Chart.js"></script>
 	<script src="js/main.js"></script>
+	<script src="js/drag02.js"></script>
+	<script src="js/popover.js"></script>
+	<script src="js/tooltip.js"></script>
+
+
 </body>
 </html>
